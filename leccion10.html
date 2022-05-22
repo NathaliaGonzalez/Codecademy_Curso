@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Codecademy_Curso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+      <h1><a href="index.html" class="logo">Lecciones</a></h1>
+      <ul class="list-unstyled components mb-5">
+        <li>
+          <a href="leccion1.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 1</a>
+        </li>
+        <li>
+          <a href="leccion2.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 2</a>
+        </li>
+        <li>
+          <a href="leccion3.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 3</a>
+        </li>
+        <li>
+          <a href="leccion4.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 4</a>
+        </li>
+        <li>
+          <a href="leccion5.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 5</a>
+        </li>
+        <li>
+          <a href="leccion6.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 6</a>
+        </li>
+        <li>
+          <a href="leccion7.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 7</a>
+        </li>
+        <li>
+          <a href="leccion8.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 8</a>
+        </li>
+        <li>
+          <a href="leccion9.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 9</a>
+        </li>
+        <li class="active">
+          <a href="leccion10.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 10</a>
+        </li>
+        <li>
+          <a href="leccion11.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 11</a>
+        </li>
+        <li>
+          <a href="leccion12.html#"><span class="fa fa-sticky-note mr-3"></span> Leccion 12</a>
+        </li>
+        <li>
+          <a href="leccion13.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 13</a>
+        </li>
+        <li>
+          <a href="leccion14.html"><span class="fa fa-sticky-note mr-3"></span> Leccion 14</a>
+        </li>
+  
+      </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" style="background-color: #ffc200;">
+      <h1>Flex Start</h1>
+      <div class='container' id='flexstart'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+      <h1>Flex End</h1>
+      <div class='container' id='flexend'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+      <h1>Center</h1>
+      <div class='container' id='center'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+      <h1>Space Between</h1>
+      <div class='container' id='between'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+      <h1>Space Around</h1>
+      <div class='container' id='around'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+      <h1>Stretch</h1>
+      <div class='container' id='stretch'>
+        <div class='left'></div>
+        <div class='center'></div>
+        <div class='right'></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+<style>
+  body {
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .container {
+    height: 300px;
+    width: 600px;
+    background-color: rgb(251, 243, 102);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .left,
+  .center,
+  .right {
+    min-height: 75px;
+    width: 200px;
+    margin: 2px;
+    background-color: rgb(244, 128, 74);
+    border: 2px solid lightgrey;
+  }
+
+  #flexstart {
+    align-content: flex-start;
+  }
+
+  #flexend {
+    align-content: flex-end;
+  }
+
+  #center {
+    align-content: center;
+  }
+
+  #between {
+    align-content: space-between;
+  }
+
+  #around {
+    align-content: space-around;
+  }
+  #content {
+    width: 100%;
+    padding: 10%;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+</style>
